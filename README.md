@@ -1,2 +1,2 @@
 ## 🚀 Checkout My Page
-[View Here](https://my-page-eight-tau.vercel.app/)
+[View Here](https://mypage212.netlify.app/)
