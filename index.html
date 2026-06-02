@@ -1,203 +1,355 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-        
-        <!--=============== REMIX ICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet"/>
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
 
-        <title>Portfolio Website - Shreenath</title>
-    </head>
-    <body>
-        <!--=============== HEADER PROFILE ===============-->
-        <header class="profile container">
-            <i class="ri-moon-line change-theme" id="theme-button"></i>
-            <div class="profile__container grid">
-                <div class="profile__data">
-                    <div class="profile__border">
-                        <div class="profile__perfil">
-                            <img src="assets/img/perfil1.jpg" alt="">
-                        </div>
-                    </div>
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
 
-                    <h2 class="profile__name">Shreenath Patil</h2>
-                    <h3 class="profile__profession">Web Developer</h3>
+      <title>Portfolio</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">Shreenath</a>
 
-                    <ul class="profile__social">
-                        <a href="https://wa.me/9321862040" target="_blank" class="profile__social-link">
-                            <i class="ri-whatsapp-line"></i>
-                        </a>
-                        <a href="https://github.com/SHREENATH72" target="_blank" class="profile__social-link">
-                            <i class="ri-github-line"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/shreenath-patil/" target="_blank" class="profile__social-link">
-                            <i class="ri-linkedin-line"></i>
-                        </a>
-                    </ul>
-                </div>
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li>
+                     <a href="#home" class="nav__link active-link">Home</a>
+                  </li>
 
-                <div class="profile__buttons">
-                    <a download="" href="assets/pdf/shreenath Patil.pdf" class="button">
-                        Downloads CV <i class="ri-download-line"></i>
-                    </a>
+                  <li>
+                     <a href="#about" class="nav__link">About</a>
+                  </li>
 
-                    <div class="profile__buttons-small">
-                        <a href="https://wa.me/9321862040" target="_blank" class="button button__small button__gray"><i class="ri-whatsapp-line"></i></a>
-                        <a href="https://github.com/SHREENATH72" target="_blank" class="button button__small button__gray"><i class="ri-github-line"></i></a>
-                    </div>
-                </div>
+                  <li>
+                     <a href="#projects" class="nav__link">Projects</a>
+                  </li>
+
+                  <li>
+                     <a href="#resume" class="nav__link">Resume</a>
+                  </li>
+
+                  <li>
+                     <a href="#contact" class="nav__link">Contact</a>
+                  </li>
+               </ul>
+
+               <!--close button-->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-large-line"></i>
+               </div>
             </div>
-        </header>
 
-        <!--=============== MAIN ===============-->
-        <main class="main">
-            <section class="filters container">
-                <!--=============== FILTERS TABS ===============-->
-                <ul class="filters__content">
-                    <button class="filters__buttons filter-tab-active" data-target="#projects">
-                        Projects
-                    </button>
-                    <button class="filters__buttons" data-target="#skills">
-                        Skills
-                    </button>
-                </ul>
-                <div class="filters__sections">
-                    <!--=============== PROJECTS ===============-->
-                    <div class="projects__content grid filters__active" data-content id="projects">
-                        <artical class="projects__card">
-                            <img src="assets/img/project1.jpg" alt="" class="project__img">
-                        
-                            <div class="project__modal">
-                                <div>
-                                    <span class="projects__subtitle"></span>
-                                    <h3 class="projects__title">Porfolio Website</h3>
-                                    <a href="https://pratham121.netlify.app/" target="_blank" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </artical>
+            <!--Toogle menu-->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+         </nav>
+      </header>
 
-                        <artical class="projects__card">
-                            <img src="assets/img/project2.jpg" alt="" class="project__img">
-                        
-                            <div class="project__modal">
-                                <div>
-                                    <span class="projects__subtitle"></span>
-                                    <h3 class="projects__title">Dev Detective</h3>
-                                    <a href="https://devdetective121.netlify.app/" target="_blank" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </artical>
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+               <div class="home__content">
+                  <div class="home__image">
+                     <img src="assets/img/home-perfil.jpg" alt="image" class="home__img">
+                  </div>
 
-                        <artical class="projects__card">
-                            <img src="assets/img/project3.jpg" alt="" class="project__img">
-                        
-                            <div class="project__modal">
-                                <div>
-                                    <span class="projects__subtitle"></span>
-                                    <h3 class="projects__title">Investment Planner</h3>
-                                    <a href="https://investmentplanner121.netlify.app/"  target="_blank" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </artical>
-                    </div>
+                  <div class="home__social">
+                     <a href="https://www.linkedin.com/in/shreenath-patil/" target="_blank" class="home__link">
+                        <i class="ri-linkedin-box-fill"></i>
+                     </a>
+                     <a href="https://github.com/SHREENATH72" target="_blank" class="home__link">
+                        <i class="ri-github-fill"></i>
+                     </a>
+                     <a href="https://wa.me/919321862040" target="_blank" class="home__link">
+                        <i class="ri-whatsapp-fill"></i>
+                     </a>
+                  </div>
+               </div>
 
-                    <!--=============== SKILLS ===============-->
-                    <div class="skills__content grid" data-content id="skills">
-                        <div class="skills__area">
-                            <h3 class="skills__title">
-                                Frontend Developer
-                            </h3>
-                        
+               <div class="home__data grid">
+                  <p class="home__subtitle">
+                     Hi, I'm a <span id="home-typed"></span>
+                  </p>
 
-                            <div class="skills__box">
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-                                    
-                                        <div>
-                                            <h3 class="skills__name">HTML</h3>
-                                            <span class="skills__level">Advanced</span>
-                                        </div>
-                                    </div>
+                  <h1 class="home__title">Shreenath Patil</h1>
 
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
+                  <p class="home__description">
+                     Frontend developer focused on building 
+                     responsive, user-friendly, and modern 
+                     web applications. Skilled in creating 
+                     clean interfaces, interactive experiences, 
+                     and performance-optimized websites using 
+                     modern frontend technologies.
+                  </p>
+                  <div class="home__buttons">
+                     <a href="assets/pdf/shreenath Patil (2).pdf" download="" target="_blank" class="button">Download CV</a>
+                     <a href="#projects" class="button button__ghost">Projects</a>
+                  </div>
+               </div>
+            </div>
+         </section>
 
-                                        <div>
-                                            <h3 class="skills__name">CSS</h3>
-                                            <span class="skills__level">Advanced</span>
-                                        </div>
-                                    </div>
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            <div class="about__container container grid">
+               <div class="about__content">
+                  <div class="about__data">
+                     <h2 class="section__title">About Me</h2>
+                     <p class="about__description">
+                        I'm a passionate frontend developer with a strong focus on 
+                        creating responsive, user-friendly, and modern web applications. 
+                        With a keen eye for design and a commitment to delivering high-quality 
+                        code, I specialize in building clean interfaces, interactive experiences,
+                         and performance-optimized websites using modern frontend technologies.
+                     </p>
 
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
+                     <a href="#contact" class="button button__ghost">Contact Me</a>
+                  </div>
+                  <div class="about__skills">
+                     <h3 class="about__subtitle">
+                        <i class="ri-bookmark-3-fill"></i>
+                        <span>Skills</span>
+                     </h3>
 
-                                        <div>
-                                            <h3 class="skills__name">Tailwind CSS</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
+                     <ul class="about__items">
+                        <li class="about__item">HTML</li>
+                        <li class="about__item">CSS</li>
+                        <li class="about__item">Tailwind CSS</li>
+                        <li class="about__item">JavaScript</li>
+                        <li class="about__item">React</li>
+                        <li class="about__item">Git</li>
+                        <li class="about__item">GitHub</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="about__image">
+                  <img src="assets/img/about-perfil.png" alt="image" class="about__img">
+               </div>
+            </div>
+         </section>
 
-                                        <div>
-                                            <h3 class="skills__name">JavaScript</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
+         <!--==================== PROJECTS ====================-->
+         <section class="projects section" id="projects">
+            <h2 class="section__title">Projects</h2>
 
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
+            <div class="projects__container container grid">
+               <article class="projects__card">
+                  <img src="assets/img/project-1.png" alt="image" class="projects__img">
+               
+                  <div class="projects__data">
+                     <h3 class="projects__title">Portfolio Website</h3>
+                     <p class="projects__description">A fully responsive portfolio website built for a client to showcase projects
+                        and skills.
+                     </p>
+                     <a href="https://pratham121.netlify.app/" target="_blank" class="button button__ghost">View Project</a>
+                  </div>
+               </article>
 
-                                        <div>
-                                            <h3 class="skills__name">React.JS</h3>
-                                            <span class="skills__level">Basic</span>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
+               <article class="projects__card">
+                  <img src="assets/img/project-3.png" alt="image" class="projects__img">
+               
+                  <div class="projects__data">
+                     <h3 class="projects__title">Dev Detective</h3>
+                     <p class="projects__description">A JavaScript-based web app that fetches and displays GitHub user profiles
+                        using the GitHub REST API.
+                     </p>
+                     <a href="https://devdetective121.netlify.app/" target="_blank" class="button button__ghost">View Project</a>
+                  </div>
+               </article>
 
-                                        <div>
-                                            <h3 class="skills__name">Git & GitHub</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!--=============== FOOTER ===============-->
-        <footer class="footer container">
-            <span class="footer__copy">
-                Made By <p class="footer__color"><i class="ri-heart-line"></i>Shreenath!</p>
-            </span>
+               <article class="projects__card">
+                  <img src="assets/img/project-2.png" alt="image" class="projects__img">
+               
+                  <div class="projects__data">
+                     <h3 class="projects__title">Investment Planner</h3>
+                     <p class="projects__description">A responsive investment planning dashboard that calculates and visualizes
+                        asset allocations in real time.
+                     </p>
+                     <a href="https://investmentplanner121.netlify.app/" target="_blank" class="button button__ghost">View Project</a>
+                  </div>
+               </article>
+            </div>
             
-        </footer>
+         </section>
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
+         <!--==================== RESUME ====================-->
+         <section class="resume section" id="resume">
+            <h2 class="section__title">My Resume</h2>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+            <div class="resume__container container grid">
+               <div class="resume__content grid">
+                  <h3 class="resume__subtitle">
+                     <i class="ri-graduation-cap-fill"></i>
+                     <span>Education</span>
+                  </h3>
+
+                  <div class="resume__list grid">
+                     <div class="resume__data">
+                        <h3 class="resume__title">Bsc Computer Science</h3>
+
+                        <div class="resume__info">
+                           <address></address>
+                           <address>2022 - 2025</address>
+                        </div>
+
+                        <p class="resume__description">Completed my Bachelor's degree in Computer Science.</p>
+                     </div>
+                  </div>
+                  <div class="resume__list grid">
+                     <div class="resume__data">
+                        <h3 class="resume__title">Web Dev Course</h3>
+
+                        <div class="resume__info">
+                           <address></address>
+                           <address>2026 - present</address>
+                        </div>
+
+                        <p class="resume__description">Currently pursuing a comprehensive Web Development program through CodeHelp.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="resume__content grid me">
+                  <h3 class="resume__subtitle">
+                     <i class="ri-award-fill"></i>
+                     <span>Experience</span>
+                  </h3>
+                  <div class="resume__list grid">
+                     <div class="resume__data">
+                        <h3 class="resume__title">Frontend Developer</h3>
+
+                        <div class="resume__info">
+                           <address></address>
+                           <address>2026 - present</address>
+                        </div>
+
+                        <p class="resume__description">Building responsive, user-friendly, and modern web applications.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+
+            <div class="contact__container container grid">
+               <form action="" class="contact__form grid" id="contact-form">
+                  <input type="text" placeholder="Name" name="user_name" required class="contact__input">
+                  <input type="text" placeholder="Email" name="user_email" required class="contact__input">
+                  <textarea placeholder="Message" name="user_message"  class="contact__input contact__area"></textarea>
+
+                  <button type="submit" class="button">Send Message</button>
+
+                  <p class="contact__message" id="contact-message"></p>
+               </form>
+
+               <div class="contact__content grid">
+                  <div class="contact__data grid">
+                     <address class="contact__address">
+                        <i class="ri-mail-fill"></i>
+                        <span>patilshreenath455@gmail.com</span>
+                     </address>
+
+                     <address class="contact__address">
+                        <i class="ri-smartphone-fill"></i>
+                        <span>+91 9321862040</span>
+                     </address>
+
+                     <address class="contact__address">
+                        <i class="ri-map-pin-2-fill"></i>
+                        <span>Mumbai</span>
+                     </address>
+
+                     <address class="contact__address">
+                        <i class="ri-time-fill"></i>
+                        <span>Available for work</span>
+                     </address>
+                  </div>
+                  <div class="contact__social">
+                     <a href="https://github.com/SHREENATH72" target="_blank" class="contact__link">
+                        <i class="ri-github-fill"></i>
+                     </a>
+
+                     <a href="https://www.linkedin.com/in/shreenath-patil/" target="_blank" class="contact__link">
+                        <i class="ri-linkedin-box-fill"></i>
+                     </a>
+
+                     <a href="https://wa.me/919321862040" target="_blank" class="contact__link">
+                        <i class="ri-whatsapp-fill"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <a href="#" class="footer__logo">Shreenath</a>
+
+            <div class="footer__links">
+               <a href="#home" class="footer__link">Home</a>
+
+               <a href="#about" class="footer__link">About</a>
+
+               <a href="#projects" class="footer__link">Projects</a>
+            </div>
+
+            <div class="footer__social">
+               <a href="https://github.com/SHREENATH72" target="_blank" class="footer__social-link">
+                  <i class="ri-github-fill"></i>
+               </a>
+
+               <a href="https://www.linkedin.com/in/shreenath-patil/" target="_blank" class="footer__social-link">
+                  <i class="ri-linkedin-box-fill"></i>
+               </a>
+
+               <a href="https://wa.me/919321862040" target="_blank" class="footer__social-link">
+                  <i class="ri-whatsapp-fill"></i>
+               </a>
+
+               <a href="mailto:patilshreenath455@gmail.com" target="_blank" class="footer__social-link">
+                  <i class="ri-mail-fill"></i>
+               </a>
+            </div>
+         </div>
+         <span class="footer__copy">
+            &#169; All Rights Reserved
+         </span>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#home" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+
+      <!--=============== TYPED JS ===============-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
+
+      <!--=============== EMAIL JS ===============-->
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>
