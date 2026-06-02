@@ -1,3 +1,12 @@
+body {
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+body.loaded {
+  opacity: 1;
+}
+
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
 
